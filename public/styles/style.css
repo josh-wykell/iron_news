@@ -5,7 +5,7 @@ body {
 }
 
 #wrapper {
-  width: 85%px;
+  width: 85%;
   margin-left: 7.5%;
   margin-right: 7.5%;
 }
@@ -70,11 +70,48 @@ h5 {
   font-size: 12px;
 }
 
-ol {
+#main {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 0;
   background-color: rgb(246, 246, 239);
 }
 
-#more{
+ol {
+  padding-left: 28px;
+}
+
+#source {
+  display: inline-block;
+  font-size: 10px;
+}
+
+#source::before {
+  content: "(";
+}
+
+#source::after {
+  content: ")"
+
+}
+#gray_arrow_pic {
+  display: inline-block;
+}
+
+#headline {
+  display: inline-block;
+  color: black;
+  font-size: 13px;
+  font-weight: 540;
+}
+
+#points {
+  font-size: 13px;
+}
+
+#more {
   background-color: rgb(246, 246, 239);
 }
 

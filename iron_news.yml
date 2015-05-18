@@ -1,10 +1,18 @@
 ---
 
 entry:
-  - headline: |
-      Five people fooled!
-  - source: kermitnews.com
-  - points: 321
-  - by: fozEE
-  - time: 3
-  - comments: 123 
+  - headline: Five people fooled!
+    source: kermitnews.com
+    bottom_line:
+    points: 321
+    by: fozEE
+    time: 3
+    comments: 123 
+
+  - headline: Five people fooled!
+    source: kermitnews.com
+    bottom_line:
+    points: 321
+    by: fozEE
+    time: 3
+    comments: 123 

@@ -25,17 +25,15 @@
   <div id="main">
     <ol>
       <% @data["entry"].each do |entry| %>
-      <li>
+      <li class="lists">
         <div id ="entry">
           <div id="gray_arrow_pic">
-            <img id="gray_arrow" src=public/images/grayarrow.gif alt="gray arrow pointing up">
+            <img id="gray_arrow" src="/assets/images/grayarrow.gif" alt="gray arrow pointing up">
           </div>
           <div id="headline">
-            <p1><%= entry["headline"] %></p1>
+            <p><%= entry["headline"] %></p>
           </div>
-          <div id="source">
-            <p2><%= entry["source"] %></p2>
-          </div>
+          <div id="source"><%= entry["source"] %></div>
           <ul>
             <li id="points">
               <%= entry["points"] %> points by <%= entry["by"] %> <%= entry["time"] %> hours ago

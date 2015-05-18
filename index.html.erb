@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/assets/styles/reset.css">
+  <link rel="stylesheet" href="/assets/styles/style.css">
+  <title>Iron News</title>
+</head>
+<body>
+ <div id="wrapper">
+  <header>
+    <h1>I</h1>
+    <h2>Iron News</h2>
+    <div id="header_list">
+      <ul>
+        <li>new</li>
+        <li>comments</li>
+        <li>show</li>
+        <li>ask</li>
+        <li>jobs</li>
+        <li>submit</li>
+      </ul>
+    </div>
+    <h5>login</h5>
+  </header>
+  <div id="main">
+    <ol>
+      <% @data["entry"].each do |entry| %>
+      <li>
+        <div id ="entry">
+          <div id="gray_arrow_pic">
+            <img id="gray_arrow" src=public/images/grayarrow.gif alt="gray arrow pointing up">
+          </div>
+          <div id="headline">
+            <p1><%= entry["headline"] %></p1>
+          </div>
+          <div id="source">
+            <p2><%= entry["source"] %></p2>
+          </div>
+          <ul>
+            <li id="points">
+              <%= entry["points"] %> points by <%= entry["by"] %> <%= entry["time"] %> hours ago
+            </li>
+            <li id="comments">
+              <%= entry["comments"] %> comments
+            </li>
+          </ul>
+        </div>
+      </li>
+      <% end %>
+    </ol>
+  </div>
+  <div id="more">
+    <h3 id="more2">More</h3>
+  </div>
+  <div id="footer">
+    <footer>
+      <ul id="footer_list">
+        <li>Guidlines</li>
+        <li>FAQ</li>
+        <li>Support</li>
+        <li>API</li>
+        <li>Security</li>
+        <li>Lists</li>
+        <li>Bookmarklet</li>
+        <li>DMCA</li>
+        <li>Apply to YC</li>
+        <li>contact</li>
+      </ul>
+      <div id="fake_search">
+        <h4 id="search">Search:</h4>
+        <form>
+          <input type="text" >    
+        </form>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
